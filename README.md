@@ -1,103 +1,89 @@
-<h1 align="center">Hi, I'm David Martinez Muelas</h1>
+# David Martinez Muelas
 
-<p align="center">
-  <strong>Software Developer | Mobile, Backend & AI Integration</strong><br/>
-  Building complete products from mobile interfaces to cloud APIs, edge devices, and AI-powered workflows.
-</p>
+Software developer building complete products — mobile apps, cloud backends, edge devices, and AI integrations.
 
-<p align="center">
-  <a href="mailto:davidmartinezmuelas@gmail.com">
-    <img src="https://img.shields.io/badge/Email-davidmartinezmuelas%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-</p>
+📧 [davidmartinezmuelas@gmail.com](mailto:davidmartinezmuelas@gmail.com) · 📍 Spain · 💼 Open to work
 
 ---
-
-## About
-
-I am a software developer focused on practical, end-to-end systems: Android and Flutter apps, FastAPI backends, PostgreSQL data models, Raspberry Pi edge deployments, and AI integrations with real product constraints.
-
-I enjoy building software that is useful outside the demo: reliable flows, clean architecture, maintainable code, and interfaces that make complex systems easier to use.
-
-## Current Focus
-
-- Mobile development with Kotlin, Jetpack Compose, Flutter, and Dart
-- Backend development with Python, FastAPI, PostgreSQL, Alembic, and background workers
-- AI product integration with Claude, Groq, Vosk, and local/edge workflows
-- IoT and edge software on Raspberry Pi with voice, MQTT, offline handling, and monitoring
-- Clean architecture, testing, CI, and developer-friendly documentation
 
 ## Featured Work
 
-### RITA - AI Elder Care Assistant
+### RITA — AI Elder Care Assistant · *Production*
 
-Production system for elderly care monitoring, built around a Raspberry Pi voice assistant, a cloud backend, and a caregiver mobile app.
+End-to-end system for monitoring elderly people living alone. Built as primary developer and deployed for real users.
 
-- Raspberry Pi edge assistant with wake word, speech recognition, voice responses, emergency detection, and offline event queuing
-- FastAPI backend with PostgreSQL, alert processing, heartbeat monitoring, AI check-in analysis, scoring, and push notification workflows
-- Flutter caregiver app with real-time status, alerts, device linking, and daily wellbeing summaries
-- MQTT over TLS for bidirectional edge-to-cloud messaging
+- **Raspberry Pi edge device** — voice assistant with wake word, Vosk speech recognition, fall and emergency detection via keyword + LLM semantic analysis, local event queue with offline retry
+- **FastAPI backend** — PostgreSQL, 11 background workers (alert escalation, heartbeat monitor, reminders, daily AI scoring), Claude API integration, GitHub Actions CI
+- **Flutter caregiver app** — real-time status dashboard, push notifications via Firebase FCM, alert management, multi-device support
+- **MQTT over TLS** — real-time bidirectional messaging between edge device and cloud
 
-`Python` `FastAPI` `Flutter` `PostgreSQL` `MQTT` `Raspberry Pi` `Firebase FCM` `Claude` `Vosk`
+`Python` `FastAPI` `Flutter` `PostgreSQL` `MQTT` `Raspberry Pi` `Claude` `Groq` `Vosk` `Firebase FCM`
 
-### [GastroLink](https://github.com/davidmartinezmuelas-tech/GastroLink)
+*Code on company GitHub (private)*
 
-Android food ordering app with nutritional tracking, group orders, local history, statistics, and an AI assistant for meal recommendations.
+---
 
-- Kotlin + Jetpack Compose app using MVVM and Clean Architecture
-- Room persistence, Ktor networking, DataStore settings, and local nutritional calculations
-- Groq-powered AI recommendations through a Node.js proxy backend deployed on Render
-- Domain unit tests and Detekt static analysis
+### [GastroLink](https://github.com/davidmartinezmuelas-tech/GastroLink) — Android Food Ordering App
 
-`Kotlin` `Jetpack Compose` `Room` `Ktor` `Node.js` `Groq` `Clean Architecture`
+Android app with nutritional tracking, group orders, and AI meal recommendations. DAM final project.
 
-### [VAT-validator](https://github.com/davidmartinezmuelas-tech/VAT-validator)
+- Kotlin + Jetpack Compose with MVVM and Clean Architecture (ui / domain / data / model)
+- Room 2.6 persistence, Ktor networking, DataStore preferences, real-time macronutrient tracking
+- AI assistant and meal recommendations via Groq Llama 3.3 70B through a Node.js proxy backend
+- Detekt static analysis and domain layer unit tests
 
-Desktop tool for validating EU VAT numbers in bulk against the official VIES service.
+`Kotlin` `Jetpack Compose` `Clean Architecture` `Room` `Ktor` `Node.js` `Groq`
+
+---
+
+### [VAT-validator](https://github.com/davidmartinezmuelas-tech/VAT-validator) — EU VAT Bulk Validator
+
+Desktop tool for validating EU VAT numbers against the official VIES service. Built during internship.
 
 - Excel import with automatic VAT/NIF column detection
-- Concurrent validation with rate limiting, retry logic, backoff, and throttling tolerance
-- Tkinter interface with validated/pending tabs, activity logs, manual recovery actions, and exports
-- Modular Python architecture for UI, scheduling, SOAP integration, models, and validation logic
+- Concurrent validation with rate limiting, exponential backoff, and throttling tolerance
+- Tkinter interface with Validated/Pending tabs, activity log, and flexible export options
+- Modular architecture: separate layers for UI, SOAP client, scheduling, retry logic, and models
 
-`Python` `Tkinter` `SOAP` `VIES` `openpyxl` `Concurrency`
+`Python` `Tkinter` `SOAP` `openpyxl` `concurrent.futures`
 
-### [broncola](https://github.com/davidmartinezmuelas-tech/broncola)
+---
 
-Flutter party game with dynamic question packs, player setup, avatar photos, and persistent local state.
+### [broncola](https://github.com/davidmartinezmuelas-tech/broncola) — Flutter Party Game
 
-- Cross-platform Flutter codebase
-- Dynamic card packs and reusable game state
-- Local persistence with SharedPreferences
-- Camera/gallery integration for player avatars
+Cross-platform party game with dynamic card packs, persistent player roster, and photo avatars.
+
+- Card draw system with 3 content packs (49 tiles each) and dynamic question pools
+- Per-player photo avatar via camera or gallery, roster persists across sessions
+- SharedPreferences local storage, cross-platform Flutter codebase
 
 `Flutter` `Dart` `SharedPreferences` `image_picker`
 
-### [Vestigios](https://github.com/davidmartinezmuelas-tech/Vestigios)
+---
 
-Dark fantasy RPG in active development with a complete game design foundation and Godot 4 technical direction.
+### [Vestigios](https://github.com/davidmartinezmuelas-tech/Vestigios) — Dark Fantasy RPG *(in development)*
 
-- Full worldbuilding, character roster, lore documentation, and gameplay system design
-- Planned systems for dialogue checks, tactical combat, corruption zones, and character progression
-- Godot 4 architecture based on autoload managers and event-driven systems
+Narrative RPG in Godot 4 with complete design foundation and implementation starting.
 
-`Godot 4` `GDScript` `Game Design` `Narrative Systems`
+- Two kingdoms at war over a hidden cosmic conspiracy; 5 playable characters, 8+ NPCs, 4 regions
+- Planned systems: tactical combat, skill-check dialogue, corruption zones, champion mechanics
+- Full GDD, Game Dev Bible, lore docs, and Godot 4 architecture defined before first line of code
+
+`Godot 4` `GDScript`
+
+---
 
 ## Tech Stack
 
-**Mobile:** Kotlin, Jetpack Compose, Flutter, Dart, Android, Material Design  
-**Backend:** Python, FastAPI, Node.js, Express, PostgreSQL, Alembic, REST APIs  
-**AI / Voice:** Claude, Groq, Vosk, llama.cpp, speech-to-text, semantic analysis  
-**Infrastructure:** Raspberry Pi, MQTT, Docker, Firebase FCM, GitHub Actions  
-**Quality:** Clean Architecture, MVVM, unit testing, Detekt, linting, documentation
+**Mobile** — Kotlin, Jetpack Compose, Flutter, Dart  
+**Backend** — Python, FastAPI, Node.js, PostgreSQL, Alembic  
+**AI / Voice** — Claude, Groq, Vosk STT, llama.cpp  
+**Infrastructure** — Raspberry Pi, MQTT, Docker, Firebase FCM, GitHub Actions  
+**Architecture** — Clean Architecture, MVVM, REST, background workers, event-driven systems
 
 ---
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=davidmartinezmuelas-tech&show_icons=true&theme=github_dark&hide_border=true" height="150" alt="GitHub stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=davidmartinezmuelas-tech&layout=compact&theme=github_dark&hide_border=true" height="150" alt="Top languages" />
-</p>
-
-<p align="center">
-  Open to junior software developer roles in mobile, backend, AI-integrated products, and full-stack application development.
+  <img src="https://github-readme-stats.vercel.app/api?username=davidmartinezmuelas-tech&show_icons=true&theme=github_dark&hide_border=true&count_private=true" height="150" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=davidmartinezmuelas-tech&layout=compact&theme=github_dark&hide_border=true&count_private=true" height="150" />
 </p>
